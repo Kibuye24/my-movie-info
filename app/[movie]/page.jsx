@@ -31,7 +31,7 @@ export default async function Show({ params }) {
           </div>
           <div className="mx-4 my-4">
             <div>
-              <h2 className="text-3xl">{res.title}</h2>
+              <h2 className="text-3xl text-red-600">{res.title}</h2>
               <p className="py-8 leading-10">{res.overview}</p>
             </div>
           </div>
@@ -46,7 +46,8 @@ export default async function Show({ params }) {
             <p>Languages: {res.original_language}</p>
             <p>Release Date: {res.release_date}</p>
             <p>
-              PG: {res.adult ? <span>18+</span> : <span>Kid Friendly</span>}
+              PG:{" "}
+              {res.adult == true ? <span>18+</span> : <span>Kid Friendly</span>}
             </p>
           </div>
         </div>
