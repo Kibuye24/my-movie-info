@@ -39,7 +39,7 @@ export default async function Show({ params }) {
             <p>
               Rating:{" "}
               <span className="py-2 text-amber-300">
-                {res.vote_average.toFixed(1)}
+                {res.vote_average?.toFixed(1)}
               </span>
             </p>
             <p>Votes: {res.vote_count}</p>
