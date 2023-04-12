@@ -2,7 +2,7 @@
 import * as React from "react";
 
 export default function Navbar() {
-  const [isNavOpen, setIsNavOpen] = React.useState(true); // state to toggle nav open/close
+  const [isNavOpen, setIsNavOpen] = React.useState(false); // state to toggle nav open/close
 
   return (
     <nav className="bg-slate-900/50 w-full mb-4 py-3 px-[3%] flex flex-row font-semibold justify-between">
@@ -39,7 +39,7 @@ export default function Navbar() {
         onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
       >
         <svg
-          className="h-8 w-8 text-gray-600"
+          className="md:hidden h-8 w-8 text-gray-600"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
